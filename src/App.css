@@ -1,38 +1,71 @@
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+    background-color: #21a1f1;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.message {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    margin-left: auto;
+}
+
+.received {
+    background-color: #fff;
+    margin-right: auto;
+}
+
+main {
+    padding: 10px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    height: 1px;
 }
